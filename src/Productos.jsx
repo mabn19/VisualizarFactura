@@ -7,8 +7,20 @@ function Productos({productos}) {
     {
       productos.map((producto)=>{
         return(<div>
-          {producto.productName}
-          {producto.productPrice}
+          <table>
+            <tr>
+            <td>
+              {producto.productName}
+              </td>
+              &emsp;
+              <td>
+              {producto.productPrice}
+              </td>
+            </tr>
+          </table>
+          
+
+          
         </div>)
       })
     }
